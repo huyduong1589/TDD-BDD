@@ -1,0 +1,27 @@
+1. After start application, express should be run on port 3000
+2. Create a login UI with username and password
+3. Build API for login.
+    3.1 After providing email and password, click on Login. web should call /login
+    3.2 login API should return login success when getting valid credential
+    3.3 login API should return missing parameter when missing user or password
+    3.4 login API should return invalid credential when wrong user or password
+4. Build model for user.
+    4.1 Create query for user table
+    4.2 User model returns valid login when getiing valid credential
+    4.3 User model returns invalid login when getiing invalid credential 
+    4.4 Integrate API with Model
+5. Create UI for register new user
+    5.1 Create a href link to /register
+    5.2 Create a UI for Register with Email, Pass and Confirm Pass
+    5.3 Validate Pass and Confirm Pass then Enable Register Button
+6. Build API for register
+    6.1 Click on Register button will send POST request to /register
+    6.1 Register API should return register successfully 
+7. Build function register in user model
+    7.1 User model returns duplicate email if email is existsting in DB
+    7.2 User model add record into DB if email is unique and return register successfully
+    7.3 Build function to delete user to clean Up data after testing
+    7.4 Connect API and function register
+8. Integrate function to encrypt password
+    8.1 Password should be encrypted in DB
+    8.2 Login function should use encrypted password

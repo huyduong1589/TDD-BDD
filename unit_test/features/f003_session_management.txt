@@ -1,0 +1,1 @@
+1. After login success, user should be redirected to Home page
